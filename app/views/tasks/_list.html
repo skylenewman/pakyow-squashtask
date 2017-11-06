@@ -1,0 +1,45 @@
+<style>
+.btn-primary {
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.strikethrough {text-decoration: line-through;}
+</style>
+<h2>Tasks</h2>
+<div>
+  <div data-scope="task" style="margin:5px auto;padding:5px 10px;border:1px solid #eee;">
+    <div style="max-width:48%;display:inline-block;">
+      <span data-prop="name"></span>
+      <em data-prop="due" style="color:#aaa;">Due Jan 1, 1970</em>
+      <span data-prop="completed"></span>
+    </div>
+    <form data-prop="complete_form" style="max-width:24%; display:inline-block;fl">
+      <input type="hidden" />
+      <button class="btn">Complete</button>
+    </form>
+    <form data-prop="delete_form" style="max-width:24%; display:inline-block;">
+      <input type="hidden" />
+      <button class="btn">Delete</button>
+    </form>
+  </div>
+</div>

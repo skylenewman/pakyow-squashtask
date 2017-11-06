@@ -1,0 +1,25 @@
+<style>
+#new_task {
+  margin:30px auto;
+  border:solid 1px #eee;
+  padding: 5px 10px;
+}
+</style>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<link  href="/styles/datepicker.min.css" rel="stylesheet">
+<script src="/scripts/datepicker.min.js"></script>
+
+<form id="new_task" role="form" action="/tasks" method="post">
+  <input type="text" name="name" placeholder="Task Name" />
+  <input type="text" name="due_on" placeholder="Task Due Date" data-toggle="datepicker" />
+  <button class="btn">Create Task</button>
+</form>
+<script>
+// https://fengyuanchen.github.io/datepicker/
+  $('[data-toggle="datepicker"]').datepicker({
+    autoHide: true
+  });
+</script>

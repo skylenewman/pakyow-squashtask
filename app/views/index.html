@@ -1,0 +1,16 @@
+<style>
+.task-block {
+  outline: solid 4px #e74c3c;padding:60px 30px 30px;text-align: center;
+  color:#e74c3c; display:block; text-decoration: none;border: solid 1px rgba(255,255,255,0.6);
+  margin-top:20px;
+}
+.task-block:hover {color:white;background:#e74c3c;}
+.task-block span {font-size:10rem;}
+</style>
+<h1>Hello, <span data-scope="user" data-prop="name"></span></h1>
+<a href="/tasks" class="task-block">
+  <p>You have <span data-scope="task" data-prop="count">#</span> tasks</p>
+</a>
+<a href="/tasks/websocket" class="task-block">
+  <p>Also, check out the websocket implementation.</p>
+</a>
